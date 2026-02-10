@@ -1,5 +1,7 @@
 body {
   margin: 0, 0, 0, 0;
+  background-color: #F5FBE6;
+  color: #233D4D;
   }
 
 /****************   Nav Section **********************/
@@ -7,7 +9,7 @@ nav {
 	background-color: lightgreen;
   font-size: large;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /***********************  Footer Section   **************************/
@@ -28,50 +30,89 @@ header {
 
 header h1 {
   font-size: xx-large;
-  color: rgb(255, 213, 128);
+  color: #233D4D;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header img {
-  border: solid 20px brown;
+  border: solid 10px lightcoral;
 }
 
 .address {
- font-size: x-small;
+ color: #233D4D;
+   display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .tagline {
   padding: 20px;
+     display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /************* Sections ********************/
 hr {
 
 }
+#multisection {
+  display: flex;
+  justify-content: space-around;
+}
 
-section h3 {
+section h2 {
   font-family: "UnifrakturMaguntia", cursive;
   font-weight: 400;
   font-style: normal;
 
-  color: chocolate;
+  color: #233D4D;
+     display: flex;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
 section dl {
   display: grid;
   gap: 10px;
+    color: #233D4D;
+     /*display: flex;
+  align-items: center;
+  flex-direction: column;*/
+}
+dt {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+dd {
+  padding-bottom: 10px;
+}
+#experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+    align-items: center;
 }
 
 section ul {
   list-style-type: square;
+      color: #233D4D;
+/*     display: flex;
+  align-items: center;
+  flex-direction: column;*/
 }
 
 section a {
   color: green;
   text-decoration: none;
 }
+.nounderline {
+  text-decoration: none;
+}
 
-section a:hover {
+section a:hover, card.hover {
   font-weight: bold;
 }
 
@@ -83,11 +124,11 @@ section a:hover {
 }
 
 .card img {
-
+padding-left: 50px;
 }
 
 .card {
-  border: solid 10px red;
+  border: solid 10px lightcoral;
   box-shadow: inset;
   outline: auto;
 }
