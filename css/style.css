@@ -36,6 +36,12 @@ header h1 {
 
 header img {
   border: solid 10px lightcoral;
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.02);
+  border-color: rgb(246, 118, 118);
 }
 
 .address {
